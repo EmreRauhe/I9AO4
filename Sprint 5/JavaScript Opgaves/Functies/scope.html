@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        scope = "globaal";
+        bevolking = 1000;
+        document.write("<br>scope: " + scope + " bevolking is:" + bevolking)
+        function functionScope()
+        {
+            var scope = "lokaal"
+            var bevolking = 10
+            variabele = true
+            document.write("<br>scope: " + scope + " bevolking is:" + bevolking)
+            document.write("<br>scope: " + scope + " bevolking is:" + variabele)
+        }
+        functionScope()
+        document.write("<br>scope: " + scope + " bevolking is:" + bevolking)
+        document.write("<br>scope: " + scope + " bevolking is:" + variabele)
+    </script>
+</body>
+</html>

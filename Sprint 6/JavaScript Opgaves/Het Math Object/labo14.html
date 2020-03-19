@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alfa = ['a','b','c','d','e','f','g','h','i','j','k','l','m','o','p','q','r','s','t','u','v','w','x','y','z']
+        function nieuwewoorden()
+        {
+            for (x = 0; x < 5; x++)
+        {
+            randomletter = alfa[Math.floor((Math.random() * alfa.length))]
+            document.write(randomletter)
+        }
+        }
+        nieuwewoorden()
+    </script>
+</body>
+</html>

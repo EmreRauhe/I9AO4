@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<button id="gooi" onclick="x()">click</button>
+<body>
+    <script>
+
+        randomNumber1 = Math.floor(Math.random() * 6) + 1;
+        randomNumber2 = Math.floor(Math.random() * 6) + 1;
+        randomNumber3 = Math.floor(Math.random() * 6) + 1;
+        randomNumber4 = Math.floor(Math.random() * 6) + 1;
+        randomNumber5 = Math.floor(Math.random() * 6) + 1;
+        worpen = [randomNumber1, randomNumber2, randomNumber3, randomNumber4, randomNumber5 ]
+        function x()
+        {
+            parseInt(worpen)
+            document.write(worpen + "<br>")
+            document.write(worpen[0] + worpen[1] + worpen[2] + worpen[3] + worpen[4])
+        }
+    </script>
+
+</body>
+</html>

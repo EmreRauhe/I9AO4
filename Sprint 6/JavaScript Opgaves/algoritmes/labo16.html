@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form id="form">
+        Selecteer maand:
+        <select id="maand">
+            <option value="januari">Januari</option>
+            <option value="februari">Februari</option>
+            <option value="maart">Maart</option>
+            <option value="april">April</option>
+            <option value="mei">Mei</option>
+            <option value="juni">Juni</option>
+            <option value="juli">Juli</option>
+            <option value="augustus">Augustus</option>
+            <option value="september">September</option>
+            <option value="oktober">Oktober</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
+        </select>
+        Selecteer jaar
+        <select id="jaar">
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+        </select>
+        <input type="button" onclick="printcalender()" value="Print Calendar"></input>
+    </form>
+    
+    <div id="datumGeselect"></div> 
+   
+    <p id="dagenWeek">zondag maandag dinsdag woensdag donderdag vrijdag zaterdag</p>
+
+    <div id="dagen"></div>
+    
+    <div></div>
+
+    <style>
+        #form{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #datumGeselect{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+        }
+
+        #dagenWeek {
+            margin-top: 2em;
+            margin-left: 1em;
+            font-family: Arial, Helvetica, sans-serif;
+            word-spacing: 3em;
+        }
+        
+        #plek{
+            background-color: aliceblue;
+            width: 50em;
+            word-spacing: 5em;
+            font-size: 1.3em;
+        }
+
+        div
+        {
+            margin-top: 2em;
+            margin-left: 0.5em;
+            border: 1px black solid;
+            text-align: center;
+            font-size: 20px;
+            height: 100px;
+            width: 100px;
+            background-color: lightblue;
+            float: left;
+            display: flex;
+        }
+       
+    </style>
+
+    <script>
+
+        function printcalender()
+        {
+            datum = new Date()
+            var datumJaar = document.getElementById("jaar").value;
+            var datumMaand = document.getElementById("maand").value;
+            document.getElementById("datumGeselect").innerHTML= "<br>" + datumMaand + " " + datumJaar
+            firstDayPrevMonth = new Date(datum.getFullYear(datumJaar), datum.getMonth(datumMaand));
+            
+            if (datumMaand == "januari")
+            {
+
+                var newDiv = document.createElement("div");
+                document.appendChild(newDiv);
+                
+            }
+        }
+    </script>
+   
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta http-equiv="Content-Type"
+        content="text/html"
+        charset=UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="functies.js"></script> 
+    <title>Rekenen</title>
+</head>
+    <script>
+        var getal1 = parseInt(prompt("vul getal 1 in"));
+        var getal2 = parseInt(prompt("vul getal 2 in"));
+        var operator = prompt("vul een operator in")
+
+        if(operator == "plus")
+        {
+            document.write(getal1 + getal2);
+        }
+        else if (operator == "min")
+        {
+            document.write(getal1 - getal2);
+        }
+        else if (operator == "delen")
+        {
+            document.write(getal1 / getal2);
+        }
+        else if (operator == "keer")
+        {
+            document.write(getal1 * getal2);
+        }
+    </script>
+</html>

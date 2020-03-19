@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var titel = 'javascript'
+        document.write("de lengte van titel is: " + titel.length)
+        document.write("<br>Index van letter s is: " + titel.indexOf("s"))
+        var string = "dit is een lange string met daarin het woord javascript"
+        var tekst = "dit is een lange tekst met daarin het woord javascript"
+        var spiegeling = ' '
+        splitsing = tekst.split(' ')
+        for (x = 0; x < titel.length; x++)
+        {
+            teken = titel.charAt(x)
+            spiegeling = teken + spiegeling
+        }
+        document.write("<br>JavaScript gespiegeld: " + spiegeling)
+        document.write("<br>resulterende array is: " + splitsing)
+        document.write("<br>Substring van string: " + string.substring(10,23) )
+        string = string.substr(0,string.indexOf('javascript')) +
+        string.substr(string.indexOf('javascript') +10, string.length)
+        document.write('<br>String is nu: ' + string)
+        if (navigator.userAgent.indexOf('MSIE') != -1)
+        {
+            document.write("<br>Browser is Internet Explorer")
+        }
+        else if (navigator.userAgent.indexOf('Firefox', 0) != -1)
+        {
+            document.write("<br>browser is Firefox")
+        }
+        else if (navigator.userAgent.indexOf('Chrome') != -1)
+        {
+            document.write("<browser is Google Chrome")
+        }
+        var cursus = prompt("kies een van de volgende " + "curssussen HTML of JavaScript")
+        
+        if (cursus.toLowerCase() == 'html' || cursus.toLowerCase() == 'javascript')
+        {
+            document.write("<br>je hebt: " + cursus.toUpperCase() + " gekozen.")
+        }
+        else
+        {
+            docuemnt.write("<br>Kies een geldige cursus")
+        }
+    </script>
+</body>
+</html>

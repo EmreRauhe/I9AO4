@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="mijnfunctions.js"></script>
+    <title>Document</title>
+    <script>
+        function verdubbel(inputgetal)
+        {
+            outputgetal = inputgetal * 2;
+            return (outputgetal);
+        }
+    </script>
+</head>
+<body>
+    <script>
+        mijngetal = prompt("typ een getal in");
+        resultaat = verdubbel(mijngetal);
+        document.write("<br>Input-getal: " + mijngetal);
+        document.write("<br>Output-getal: " + resultaat);
+        afmelden();
+        begroeten();
+        document.write("<br>De Dollar koers is " + dollarKoers());
+        document.write("<br>De Euro koers is " + euroKoers());
+        document.write("<br>100 Dollars is " + dollar_naar_euro(100) + " euro's");
+        document.write("<br>wissel 100 euro's in dollars:" + wissel(100, "euro"))
+        document.write("<br>wissel 20 dollars in euro's:" + wissel(20, "dollar"))
+    </script>
+
+<form name="form"></form>
+    <input type="text" name="bedrag" placeholder="bedrag in dollars">
+    <input type="button" value="converteren in euro's" onclick="document.write('conversie in euros:')"/>  
+</body>
+</html>

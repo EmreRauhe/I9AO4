@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>labo4</title>
+</head>
+<body>
+    <script>
+        var palet = ["rood", "blauw", "groen", "geel", "paars"]
+        document.write(palet + "<br>")
+        var nieuwekleur = prompt("typ een kleur in: ")
+        palet.push(nieuwekleur)
+        document.write(palet + "<br>")
+        var nieuwekleur = prompt("typ een kleur in: ")
+        palet.unshift(nieuwekleur)
+        document.write(palet + "<br>")
+        palet.sort()
+        document.write(palet + "<br>")
+        var palet1 = palet.slice(2)
+        var palet2 = palet.slice(0,3)
+        document.write(palet1 + "<br>")
+        document.write(palet2 + "<br>")
+        var palet3 = palet1
+        document.write(palet3 + "<br>")
+    </script>
+</body>
+</html>
